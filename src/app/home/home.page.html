@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Jokes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-label>Please select a joke type</ion-label>
+  <ion-list>
+    <ion-label>Joke Type:</ion-label>
+    <ion-select interface="popover" [(ngModel)]="jokeOption">
+      <ion-select-option value="any">Any Joke</ion-select-option>
+      <ion-select-option value="programming">Programming Joke</ion-select-option>
+      <ion-select-option value="pun">Pun Joke</ion-select-option>
+    </ion-select>
+  </ion-list>
+  <ion-button (click)="navigate()">Search</ion-button>
+  <ion-button [routerLink]="['/saved-jokes']">Favorite Jokes</ion-button>
+</ion-content>
