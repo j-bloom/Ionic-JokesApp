@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Programming Jokes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <ion-label>{{displayJoke()}}</ion-label>
+  <br>
+  <br>
+  <ion-button (click)="getNewJoke()">Get New Joke</ion-button>
+  <ion-button (click)="saveJoke()">Save Joke</ion-button>
+</ion-content>
