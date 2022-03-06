@@ -7,6 +7,8 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <br>
+  <div class="select--joke__label">
   <ion-label>Please select a joke type</ion-label>
   <ion-list>
     <ion-label>Joke Type:</ion-label>
@@ -16,6 +18,9 @@
       <ion-select-option value="pun">Pun Joke</ion-select-option>
     </ion-select>
   </ion-list>
+  </div>
+  <div class="select--joke__label">
   <ion-button (click)="navigate()">Search</ion-button>
   <ion-button [routerLink]="['/saved-jokes']">Favorite Jokes</ion-button>
+</div>
 </ion-content>

@@ -25,3 +25,11 @@
 #container a {
   text-decoration: none;
 }
+
+@media (min-width: 800px) {
+  .select--joke__label {
+    display: block;
+    inline-size: 75%;
+    padding-left: 25%;
+  }
+}
